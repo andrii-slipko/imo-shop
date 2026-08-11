@@ -1,24 +1,28 @@
 import { Link } from 'react-router-dom'
 import './Categories.css'
 
+import femImg from '../../assets/FEM.png'
+import invImg from '../../assets/INV.png'
+import akbImg from '../../assets/AKB.png'
+
 const categories = [
   {
     title: 'Сонячні модулі',
     subtitle: 'Панелі для дому та бізнесу',
     value: 'Сонячні модулі',
-    image: './src/assets/FEM.png',
+    image: femImg,
   },
   {
     title: 'Інвертори',
     subtitle: 'Гібридні та мережеві рішення',
     value: 'Інвертори',
-    image: './src/assets/INV.png',
+    image: invImg,
   },
   {
     title: 'Акумулятори',
     subtitle: 'Накопичення та резерв живлення',
     value: 'Акумулятори',
-    image: './src/assets/AKB.png',
+    image: akbImg,
   },
 ]
 
@@ -26,7 +30,6 @@ export default function Categories() {
   return (
     <section className="homeCategories">
       <div className="sectionHead">
-        
         <h2>Основні категорії</h2>
       </div>
 

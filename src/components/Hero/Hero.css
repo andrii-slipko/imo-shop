@@ -1,0 +1,95 @@
+.hero {
+  max-width: 1120px;
+  height: 580px;
+  margin: 32px auto 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url('/src/assets/mustdahai.png') center/contain no-repeat;
+background-color: #eee;
+}
+
+.heroContent {
+  height: 100%;
+  padding: 28px 44px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.heroContent p {
+  margin: 8px auto 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.heroButton {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 36px;
+  margin-bottom: 18px;
+
+  width: 210px;
+  height: 52px;
+
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 360px;
+    margin: 20px 16px;
+  }
+
+  .heroContent {
+    padding: 24px 20px;
+  }
+
+  .heroContent h1 {
+    font-size: 24px;
+  }
+
+  .heroContent p {
+    font-size: 17px;
+  }
+
+  .heroButton {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.heroButton {
+  border: none;
+  cursor: pointer;
+}
+.mars {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 800;
+  padding-top: 77px;
+  padding-left: 520px;
+  color: #cbcbcb;
+}

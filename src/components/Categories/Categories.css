@@ -1,0 +1,140 @@
+.homeCategories {
+  max-width: 1120px;
+  margin: 0 auto 56px;
+}
+
+.sectionHead {
+  margin-bottom: 24px;
+}
+
+.sectionHead p {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sectionHead h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.categoryCard {
+  height: 260px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  background: #111111;
+  isolation: isolate;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.categoryCard img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 0.55s ease;
+  padding-left: 85px;
+  border-radius: 50px;
+}
+
+.categoryOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,0.05) 0%,
+      rgba(0,0,0,0.25) 45%,
+      rgba(0,0,0,0.85) 100%
+    );
+}
+
+.categoryContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.categoryContent span {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.16);
+  backdrop-filter: blur(8px);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.categoryContent h3 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.categoryContent p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.85;
+  transform: translateY(8px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.22);
+}
+
+.categoryCard:hover img {
+  transform: scale(1.12);
+}
+
+.categoryCard:hover .categoryContent p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .homeCategories {
+    margin: 0 16px 42px;
+  }
+
+  .sectionHead h2 {
+    font-size: 30px;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .categoryCard {
+    height: 220px;
+    border-radius: 22px;
+  }
+
+  .categoryContent h3 {
+    font-size: 26px;
+  }
+}
